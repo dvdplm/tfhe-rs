@@ -1,3 +1,4 @@
+use crate::conformance::ParameterSetConformant;
 use crate::core_crypto::commons::generators::NoiseRandomGenerator;
 use crate::core_crypto::commons::math::random::{DefaultRandomGenerator, XofSeed};
 #[cfg(feature = "zk-pok")]
@@ -26,7 +27,6 @@ use crate::shortint::ShortintEncoding;
 use crate::zk::{CompactPkeCrs, ZkComputeLoad};
 use crate::Error;
 use serde::{Deserialize, Serialize};
-use tfhe_safe_serialize::ParameterSetConformant;
 use tfhe_versionable::Versionize;
 /// Private key from which a [`CompactPublicKey`] can be built.
 #[derive(Clone, Debug, Serialize, Deserialize, Versionize)]
