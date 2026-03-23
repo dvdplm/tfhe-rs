@@ -24,6 +24,7 @@ serde = { workspace = true, features = ["default", "derive"] }
 zeroize = "1.7.0"
 num-bigint = "0.4.5"
 tfhe-versionable = { version = "0.7.0", path = "../utils/tfhe-versionable" }
+
 zk-cuda-backend = { version = "0.1.0", path = "../backends/zk-cuda-backend", optional = true }
 tfhe-cuda-backend = { version = "=0.14.0", path = "../backends/tfhe-cuda-backend", optional = true }
 itertools.workspace = true
@@ -32,6 +33,7 @@ getrandom = { workspace = true, features = ["js"] }
 wasm-par-mq = { version = "0.1.0", path = "../utils/wasm-par-mq", features = [
     "sync-api",
 ], optional = true }
+tfhe-safe-serialize = { workspace = true }
 
 [features]
 experimental = []
